@@ -1,0 +1,72 @@
+/* #root */
+#root {
+  margin-left: 100px;
+  margin-top: 0;
+}
+
+/* Logo animation (conditionally based on prefers-reduced-motion) */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card styling */
+.card {
+  padding: 2em;
+  text-align: left;
+}
+
+/* Container and Card Container */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 0 0 calc(33.33% - 20px); /* Three cards per row with spacing */
+  padding: 1px;
+  margin: 10px;
+  font-size: 10px;
+  background-color: gray;
+}
+
+/* Navbar styling */
+.navbar ul li {
+  margin-right: auto;
+  margin-left: 20px;
+  color: black;
+  position: relative;
+  margin-top: 5px;
+}
+
+.navbar {
+  background-color: white;
+  color: #111010;
+  position: relative;
+  margin-top: 5px;
+}
+
+.navbar .container1 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: 1px solid black;
+}
+
+/* Align class */
+.align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin-left: 300px;
+  font-weight: bold;
+}
